@@ -6,6 +6,8 @@
     display:        inline-block;
     vertical-align: top;
     @include sidebar-slide-animation;
+    text-align: justify;
+    text-justify: inter-word;
 
     .post-header {
         .post-title {
