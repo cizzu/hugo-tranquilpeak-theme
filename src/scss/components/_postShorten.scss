@@ -133,21 +133,29 @@
         }
     }
     .postShorten.postShorten--thumbnailimg-top {
+        .postShorten-wrap {
+            display: block !important;
+            width: 100% !important;
+
+            & > a {
+                display: block !important;
+                width: 100% !important;
+            }
+        }
+
         .postShorten-thumbnailimg {
-            width: 100%;
-            height: 35vh;
-            overflow: hidden;
-            margin: auto;
-            position: relative;
+            display: block !important;
+            width: 100% !important;
+            height: $post-bottom-thumbnail-image-max-height !important;
+            overflow: hidden !important;
+            margin: 0 0 20px 0 !important;
+
             img {
-                position: absolute;
-                left: -1000%;
-                right: -1000%;
-                top: -1000%;
-                bottom: -1000%;
-                margin: auto;
-                min-height: 100%;
-                min-width: 100%;
+                display: block !important;
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                object-position: center !important;
             }
         }
     }
